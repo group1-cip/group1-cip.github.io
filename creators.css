@@ -1,0 +1,120 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    font-family: montserrat;
+}
+nav{
+    background: #282E3A;
+    height: 80px;
+    width: 100%;
+}
+label.logo img{
+    height: 80px;
+    padding: 15px;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    font-size: 17px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 7px 30px;
+    border-radius: 3px;
+}
+a.active{
+    color: #ffffff !important;
+    background: #54617a79;
+    transition: 5ms;
+}
+ul ul{
+    position: absolute;
+    top: 70px;
+    opacity: 0;
+    visibility: hidden;
+    transition: top 3ms;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px -1px #282E3A;
+}
+ul ul li{
+    position: relative;
+    margin: 0px;
+    float: none;
+    display: list-item;
+    background: #ffffff;
+    
+}
+ul ul li a{
+    color: #282E3A;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 0 15px;
+}
+ul li:hover > ul{
+    opacity: 1;
+    visibility: visible;
+}
+ul ul li:hover{
+    background-color: #475268;
+    transition: 5ms;
+}
+ul ul li:hover > a{
+    color: #ffffff;
+    transition: 5ms;
+}
+h1{
+    font-size: 80px;
+    margin: 0 15px;
+}
+.column {
+    float: left;
+    width: 25%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+    padding: 0 16px;
+}
+
+.container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+  
+.title {
+    color: grey;
+}
+  
+.button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    margin: 5px;
+    color: white;
+    background-color: #282E3A;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+}
+  
+.button:hover {
+    background-color: #ED1E79;
+}
