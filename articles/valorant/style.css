@@ -1,0 +1,162 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Montserrat";
+    background-color: #ebeed8;
+}
+nav{
+    background: #282E3A;
+    height: 80px;
+    width: 100%;
+}
+label.logo img{
+    height: 80px;
+    padding: 15px;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    font-size: 17px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 7px 30px;
+    border-radius: 3px;
+}
+a.active{
+    color: #ffffff !important;
+    background: #54617a79;
+    transition: 5ms;
+}
+ul ul{
+    position: absolute;
+    top: 70px;
+    z-index: 2;
+    opacity: 0;
+    visibility: hidden;
+    transition: top 3ms;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 1px #282e3a54;
+}
+ul ul li{
+    position: relative;
+    margin: 0px;
+    float: none;
+    display: list-item;
+    background: #ffffff;    
+}
+ul ul li a{
+    color: #282E3A;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 0 15px;
+}
+ul li:hover > ul{
+    opacity: 1;
+    visibility: visible;
+}
+ul ul li:hover{
+    background-color: #475268;
+    transition: 5ms;
+}
+ul ul li:hover > a{
+    color: #ffffff;
+    transition: 5ms;
+}
+.title{
+    margin: 2em;
+    width: 75%;
+}
+.title h1{
+    font-size: 5em;
+    font-weight: 900;
+    color: #080e1a;
+}
+.text{
+    width: 50%;
+    margin: 0 auto;
+    text-align: justify;
+}
+.text p{
+    padding: 3em 0;
+    color: #31353b;
+    font-weight: 500;
+    line-height: 2em;
+}
+.text img{
+    display: block;
+    margin: 3em auto 0;
+    width: 100%;
+}
+.button{
+    position: absolute;
+    left: 10.5%;
+    top: 25%;
+    transform: translate(-50%, -50%);
+}
+.button a{
+    display: block;
+    width: 300px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: #ED1E79;
+    background-color: #282E3A;
+    border: 2px solid #282E3A;
+    border-radius: 10px;
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+    transition: all .35s;
+}
+.button a span{
+    position: relative;
+    z-index: 2;
+}
+.button a:after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    border-radius: 10px;
+    background: #39B54A;
+    transition: all .35s;
+}
+.button a:hover{
+    color: #fff;
+}
+.button a:hover:after{
+    width: 100%;
+}
+.gotop{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background: #282E3A;
+    bottom: 40px;
+    right: 50px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    color: #5DD1F9;
+    transition: all .35s;
+}
+.gotop:hover{
+    background: #5DD1F9;
+    color: #fff;
+}

@@ -46,7 +46,7 @@ ul ul{
     visibility: hidden;
     transition: top 3ms;
     border-radius: 10px;
-    box-shadow: 1px 1px 10px -1px #282E3A;
+    box-shadow: 0 0 10px 1px #282e3a54;
 }
 ul ul li{
     position: relative;
@@ -193,5 +193,4 @@ h1{
     color: #ffffff;
     background-image: linear-gradient(to right, #39B54A, #5DD1F9);
     border-radius: 2rem;
-    
 }

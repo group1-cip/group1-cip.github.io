@@ -41,11 +41,12 @@ a.active{
 ul ul{
     position: absolute;
     top: 70px;
+    z-index: 4;
     opacity: 0;
     visibility: hidden;
     transition: top 3ms;
     border-radius: 10px;
-    box-shadow: 1px 1px 10px -1px #282E3A;
+    box-shadow: 0 0 10px 1px #282e3a54;
 }
 ul ul li{
     position: relative;
@@ -110,7 +111,7 @@ h1{
 #imgTap:checked ~ .inner-part .img{
     height: 370px;
     width: 850px;
-    z-index: 99;
+    z-index: 2;
     margin-top: 10px;
     transition: .3s .2s ease-in;
 }
@@ -145,7 +146,7 @@ h1{
 #tap-4:checked ~ .inner-part .content-4{
     opacity: 1;
     margin-left: 0px;
-    z-index: 100;
+    z-index: 3;
     transition-delay: .3s;
 }
 .content span{
@@ -191,7 +192,7 @@ h1{
     bottom: 150px;
     left: 65%;
     transform: translateX(-50%);
-    z-index: 12;
+    z-index: 1;
 }
     #imgTap:checked ~ .sliders{
     display: none;
