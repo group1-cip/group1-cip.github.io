@@ -209,7 +209,7 @@ p a{
     text-decoration: underline;
 }
 p a:hover{
-    background: #282E3A;
+    background: #ED1E79;
     color: #ffffff;
     transition: all .35s;
 }

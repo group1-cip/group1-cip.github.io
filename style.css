@@ -41,7 +41,7 @@ a.active{
 ul ul{
     position: absolute;
     top: 70px;
-    z-index: 2;
+    z-index: 100;
     opacity: 0;
     visibility: hidden;
     transition: top 3ms;
@@ -194,3 +194,131 @@ h1{
     background-image: linear-gradient(to right, #39B54A, #5DD1F9);
     border-radius: 2rem;
 }
+.about{
+    text-align: justify;
+    width: 60%;
+    margin: auto;
+    line-height: 2em;
+}
+header {
+    position: relative;
+    background-color: black;
+    height: 75vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+}
+header video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+header .container {
+    position: relative;
+    z-index: 2;
+}
+header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 1;
+}
+.container .header {
+    font-size: 7em;
+    color: #ffffff;
+    padding: 1.5em 0;
+}
+.about a{
+    color: #ED1E79;
+    text-decoration: underline;
+}
+.about a:hover{
+    background: #ED1E79;
+    color: #ffffff;
+    transition: all .35s;
+}
+.slider {
+    margin: 3em auto;
+    width: 60%;
+    position: relative;
+    overflow: hidden;
+    box-shadow: -2px 11px 13px 5px rgba(0,0,0,0.3);
+    -webkit-box-shadow: -2px 11px 13px 5px rgba(0,0,0,0.3);
+    -moz-box-shadow: -2px 11px 13px 5px rgba(0,0,0,0.3);
+}
+.slides {
+    display: flex;
+}
+.slide {
+    min-width: 100%;
+    position: relative;
+}
+.slide img {
+    width: 100%;
+    height: 100%;
+}
+.slide-controls {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#next-btn,
+#prev-btn {
+    cursor: pointer;
+    background: transparent;
+    font-size: 30px;
+    border: none;
+    padding: 10px;
+    color: white;
+}
+#next-btn:focus,
+#prev-btn:focus {
+    outline: none;
+}
+/* The grid: Four equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 25%;
+    padding: 10px;
+  }
+  
+  /* Style the images inside the grid */
+  .column img {
+    opacity: 0.8;
+    cursor: pointer;
+  }
+  
+  .column img:hover {
+    opacity: 1;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* The expanding image container (positioning is needed to position the close button and the text) */
+  .sliders {
+    position: relative;
+    display: none;
+  }

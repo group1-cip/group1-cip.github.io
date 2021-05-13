@@ -2,6 +2,10 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <!-- JavaScript -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <link rel="icon" href="../../logo.svg">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,31 +13,39 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?Cardo&family=Montserrat:wght@100;300;400;500;600;700;900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
-    <title>JOYSTIQ</title>
+    <title>VALORANT</title>
 </head>
 <body>
     <nav>
         <label class="logo"><a href="../index.html"><img src="../logotext.svg"></a></label>
         <ul>
-            <li><a class="active" href="../index.html" style="color: #FCEE21;">Home</a></li>
-            <li><a href="" style="color: #ED1E79;">Games</a>
+            <li><a href="../index.html" style="color: #FCEE21;">Home</a></li>
+            <li><a class="active" href="" style="color: #ED1E79;">Games</a>
                 <ul>
-                    <li><a href="lol.html">League of Legends</a></li>
+                    <li><a href="lol/League.html">League of Legends</a></li>
                     <li><a href="valorant.html">Valorant</a></li>
                     <li><a href="dota.html">DOTA 2</a></li>
-                    <li><a href="ml.html">Mobile Legends</a></li>
+                    <li><a href="ml/EMEL.html">Mobile Legends</a></li>
                     <li><a href="genshin.html">Genshin Impact</a></li>
                 </ul>
             </li>
             <li><a href="" style="color: #39B54A;">About Us</a>
                 <ul>
-                    <li><a href="">About the Website</a></li>
-                    <li><a href="creators.html">The Creators</a></li>
+                    <li><a href="../aboutus.html">About the Website</a></li>
+                    <li><a href="../creators.html">The Creators</a></li>
                 </ul></li>
-            <li><a href="" style="color: #5DD1F9;">Photos</a></li>
+            <li><a href="../gallery.html" style="color: #5DD1F9;">Gallery</a></li>
         </ul>
     </nav>
-    <h1>VALORANT</h1>
+    <header>
+        <div class="overlay"></div>
+        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+          <source src="retake.mp4" type="video/mp4">
+        </video>
+        <div class="container">
+            <h1 class="header">VALORANT</h1>
+        </div>
+    </header>
     <div class="post">
         <div class="post-img">
             <img src="https://cdn1.dotesports.com/wp-content/uploads/2021/04/09065143/Screenshot-2021-02-25-111626.jpg" alt="">
